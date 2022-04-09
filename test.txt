@@ -1,0 +1,11 @@
+/usr/local/bin
+/usr/bin
+/bin
+/usr/sbin
+/sbin
+/Users/tyler/ProLint2
+/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9/bin
+/Users/tyler/ProLint4
+/CEdev/bin
+/Users/tyler/Git/ToDo
+/Users/tyler/Git/master-snippets-
