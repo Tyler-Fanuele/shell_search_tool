@@ -18,6 +18,8 @@ path = os.getcwd()
 
 file = open("/etc/paths", "a")
 
-print(add_color("Adding " + path + " to the path...", G, REG))
+print(add_color("=== Path Adding Tool\n=== Copyright 2022, Tyler Fanuele\n===", G, REG))
+
+print(add_color("=== Adding " + path + " to the path...", G, REG))
 
 file.write(path + "\n")

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+from audioop import add
+from importlib.metadata import files
 import os
 import re
 import curses
@@ -183,6 +185,7 @@ def return_like_items(dict, string):
             return_dict.append(key)
     return return_dict
 
+
 def main():
     path = os.getcwd()
     fname = []
@@ -191,6 +194,7 @@ def main():
     if not len(sys.argv) <= 2:
         string = sys.argv[2]
     print(string)
+
     for root,d_names,f_names in os.walk(path):
         if wanted == "dir":
             for d in d_names: # gets directorty names
@@ -209,6 +213,6 @@ def main():
 
     retlist = return_like_items(fname, string)
     
-    print("start")
+    print(add_color("=== Shell Search Tool\n=== Copyright 2022, Tyler Fanuele", G, REG))
     snip_visual(string, retlist)
 main()
